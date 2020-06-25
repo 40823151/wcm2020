@@ -1,15 +1,51 @@
-<h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<h1>網際內容管理</h1>
+<p>這學期我學到了如何安裝虛擬主機，</p>
+<h1>進度</h1>
+<h2>期中考前</h2>
+<h3>W1~W3</h3>
+<p>下載python3.8.3</p>
+<p><img alt="" height="147" src="/images/1.jpg" width="204"/></p>
+<p></p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/mFzyZTSMA8k" width="560"></iframe></p>
+<p><br/><span>1.什麼是 </span><span>Python</span><span>？</span></p>
+<p><strong> </strong></p>
+<p dir="ltr"><span>Python﹐是一種廣泛使用的高階程式語言﹐屬於通用型程式語言。作為一種直譯語言﹐Python的設計哲學強調代碼的可讀性和簡潔的語法（尤其是使用空格縮排劃分代碼塊﹐而非使用大括號或者關鍵詞）。相比於C++或Java，Python讓開發者能夠用更少的代碼表達想法。不管是小型還是大型程式﹐該語言都試圖讓程式的結構清晰明了。</span></p>
+<p><span>2.Python</span><span>有什麼功能呢</span><span>?</span></p>
+<p dir="ltr"><span>支援多種編程範式﹐包括物件導向、命令式、函數式和程序式編程。</span></p>
+<p dir="ltr"><span>a、</span><span>數據分析與處理</span></p>
+<p dir="ltr"><span>Python通常被用來做數據分析</span><span>﹐</span><span>因為Python可直接進行調用</span><span>﹐</span><span>方便且靈活</span><span>﹐</span><span>可以根據數據分析與統計的需要靈活使用。Python也是一個比較完善的數據分析生態系統</span><span>﹐</span><span>其中matplotlib經常會被用來繪製數據圖表</span><span>﹐</span><span>它是一個2D繪圖工具</span><span>﹐</span><span>有著良好的跨平台交互特性。</span></p>
+<p dir="ltr"><span>b、</span><span>Web開發應用</span></p>
+<p dir="ltr"><span>Python是Web開發的主流語言</span><span>﹐</span><span>但不能說是最好的語言。畢竟</span><span>﹐</span><span>在Web開發中應用多使用JavaScript</span><span>﹐</span><span>原因是已一套成熟的框架。Python開發的Web項目雖小而精</span><span>﹐</span><span>但支持最新的XML技術</span><span>﹐</span><span>而且數據處理的功能較為強大。</span></p>
+<p dir="ltr"><span>c、</span><span>人工智慧應用</span></p>
+<p dir="ltr"><span>Python擁有強大而豐富的庫以及數據分析能力。而且Python是面向對象的動態語言</span><span>﹐</span><span>且適用於科學計算。不僅如此</span><span>﹐</span><span>Python提供了大量的API</span><span>﹐</span><span>這也正是因為Python當中包含著較多的適用於人工智慧的模塊。</span></p>
+<p dir="ltr"> </p>
+<p dir="ltr"><span>3.學習Python可以從事什麼工作呢?</span></p>
+<p dir="ltr"><span>Python有以上那麼多強大的功能﹐那麼我學習完Python可以從事那些工作呢?我們為大家總結出以下幾個大方向</span></p>
+<p dir="ltr"><span>1）</span><span>後端工程師</span><span>：使用它單間網站，後台服務比較容易維護。如：Gmail、Youtube、知乎、豆瓣</span><span><br class="kix-line-break"/></span><span><br class="kix-line-break"/></span><span>2）</span><span>自動化運維</span><span>：自動化處理大量的運維任務</span><span><br class="kix-line-break"/></span><span><br class="kix-line-break"/></span><span>3）</span><span>數據分析師</span><span>：快速開發快速驗證，分析數據得到結果</span><span><br class="kix-line-break"/></span><span><br class="kix-line-break"/></span><span>4）</span><span>遊戲開發者</span><span>：一般是作為遊戲腳本內嵌在遊戲中</span><span><br class="kix-line-break"/></span><span><br class="kix-line-break"/></span><span>5）</span><span>自動化測試</span><span>：編寫為簡單的實現腳本，運用在Selenium/lr中，實現自動化。</span><span><br class="kix-line-break"/></span><span><br class="kix-line-break"/></span><span>6）</span><span>網站開發</span><span>：藉助django,flask框架自己搭建網站。</span></p>
+<p></p>
+<p></p>
+<h3>W4~W6</h3>
+<p dir="ltr">下載pip</p>
+<p dir="ltr">簡單說就是下載包需要的東西都需要從pip下載</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/9OZyb59Lwbc" width="560"></iframe></p>
+<p></p>
+<p></p>
+<h3>W7~W9</h3>
+<p>學習使用Google meeting，OBS，DroidCam等等軟體錄製影片及編輯影片</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/HFcFZsTv0rw" width="560"></iframe></p>
+<p></p>
+<p></p>
+<p dir="ltr"></p>
+<h2>期中考後</h2>
+<h3>W10~W12</h3>
+<p><h>如何建立ssh的鑰使</h></p>
+<p></p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/DkFGQsl-DDA" width="560"></iframe></p>
+<h3>W13~W15</h3>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/XRWJ23vnlWQ" width="560"></iframe></p>
+<p></p>
+<h3>W16~W18</h3>
+<p>ubunto虛擬網站的建立</p>
+<p></p>
+<h1>參考之料</h1>
+<p><a href="https://www.happycoding.today/posts/22">https://www.happycoding.today/posts/22</a></p>
